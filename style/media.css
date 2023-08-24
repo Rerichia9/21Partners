@@ -1,0 +1,349 @@
+@media (max-width: 1439px) {
+  .steps__item:not(:nth-child(3n)) {
+    margin-right: 0px;
+  }
+
+  .steps__item:not(:nth-child(2n)) {
+    margin-right: 25px;
+  }
+
+  .steps__item:nth-child(n+3) {
+    margin-bottom: 65px;
+  }
+
+  .steps {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 1123px) {
+  .header {
+    display: none;
+  }
+
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .header__nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    padding: 120px 0 0 50px;
+    background: rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+    visibility: hidden;
+    transform: translateX(-120%);
+    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+  }
+
+  .header__nav .header__list {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .header__nav .header__list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .header__nav--active {
+    visibility: visible;
+    transform: none;
+  }
+
+  .header__list-item {
+    margin-right: 0;
+    background: var(--main-blue);
+    border-radius: 20px;
+    max-width: 200px;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+
+  .header__list-item:focus-visible,
+  .header__list-item:hover {
+    border-bottom: 0;
+    transition: 0.3s ease-in-out;
+    color: var(--main-blue);
+    background: var(--main-white);
+  }
+
+  /* hero */
+  .hero__content {
+    text-align: center;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 78px 0 128px;
+  }
+
+  .hero__title {
+    font-size: 28px;
+    margin-bottom: 80px;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .planet {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-bottom: 100px;
+    transform: scale(0.7);
+  }
+
+  .marker1 {
+    right: 60px;
+  }
+
+  .marker2 {
+    right: 65px;
+  }
+
+  .marker3 {
+    right: 170px;
+  }
+
+  .marker4 {
+    right: 290px;
+  }
+
+  .marker5 {
+    right: 230px;
+  }
+
+  .marker6 {
+    right: 150px;
+  }
+
+  .planet-circle {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+  }
+
+  /* req */
+  .req-wrapper {
+    padding: 50px 0 60px;
+    justify-content: start;
+  }
+
+  .req__content {
+    align-items: start;
+    max-width: 358px;
+  }
+
+  .req__hero {
+    top: 470px;
+    width: 100%;
+  }
+
+  .req__fly {
+    left: -100px;
+    top: 550px;
+  }
+
+  @keyframes animation2 {
+    0% {
+      transform: rotate(0deg) translate(-1.7%) rotate(0deg) scale(0.7);
+    }
+
+    100% {
+      transform: rotate(360deg) translate(-1.7%) rotate(-360deg) scale(0.7);
+    }
+  }
+
+  .req__text {
+    text-align: left;
+  }
+
+  .req__title {
+    text-align: left;
+  }
+
+  .slider {
+    margin-bottom: 354px;
+  }
+
+  /* slider */
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .slider .swiper {
+    padding-left: 10px;
+  }
+
+  .swiper-slide {
+    width: 330px;
+    height: 192px;
+  }
+
+  /* about-us */
+  .about {
+    padding-bottom: 502px;
+    background-image: url(/img/about-us__back-mob.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+  }
+
+  .about-wrapper {
+    padding: 50px 0 0 0;
+  }
+
+  .about__hero {
+    position: absolute;
+    top: 483px;
+    right: 0;
+  }
+
+  .about__fly {
+    right: 0px;
+    top: 600px;
+  }
+
+  @keyframes animation3 {
+    0% {
+      transform: rotate(0deg) translate(-1.7%) rotate(0deg) scale(1.3);
+    }
+
+    100% {
+      transform: rotate(360deg) translate(-1.7%) rotate(-360deg) scale(1.3);
+    }
+  }
+
+  .about__text {
+    max-width: 358px;
+  }
+
+  /* form */
+  .input-wrap:not(:nth-child(2n)) {
+    margin-right: 0px;
+  }
+
+  .consultation__form {
+    align-items: center;
+  }
+
+  .consultation__form-left {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .consultation {
+    margin-bottom: 5px;
+  }
+
+  .pop-up__content {
+    padding: 25px 15px;
+    max-width: 287px;
+  }
+}
+
+@media (max-width: 900px) {
+  .steps__item:not(:nth-child(2n)) {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .steps__item {
+    width: 200%;
+  }
+
+  .steps__item-round {
+    right: 37%;
+  }
+
+  .steps__item-num {
+    right: 45%;
+  }
+
+  .about__fly {
+    right: 80px;
+    top: 600px;
+  }
+
+  .planet-circle {
+    top: -7px;
+    right: -10px;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) scale(1.1);
+    }
+
+    100% {
+      transform: rotate(360deg) scale(1.1);
+    }
+  }
+
+  .marker1 {
+    right: 20px;
+  }
+
+  .marker2 {
+    right: 25px;
+  }
+
+  .marker3 {
+    right: 120px;
+  }
+
+  .marker4 {
+    right: 250px;
+  }
+
+  .marker5 {
+    right: 180px;
+  }
+
+  .marker6 {
+    right: 110px;
+  }
+
+  .consultation__form__general {
+    width: 310px;
+  }
+
+  .consultation__form {
+    padding: 24px;
+    max-width: 358px;
+  }
+
+  .planet-fly {
+    z-index: -1;
+  }
+
+  @keyframes animation1 {
+    0% {
+      transform: rotate(0deg) translate(-0.7%) rotate(0deg) scale(1.4);
+    }
+
+    50% {
+      transform: rotate(360deg) translate(-0.7%) rotate(-360deg) scale(1.5);
+    }
+
+    100% {
+      transform: rotate(0deg) translate(-0.7%) rotate(0deg) scale(1.4);
+    }
+  }
+}
+
+@media (max-width: 411px) {
+  .about__hero {
+    top: auto;
+    bottom: 0;
+  }
+}
